@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   build-job:
-    # name: Build Profile-3D-Contrib
+    name: Build Profile-3D-Contrib
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
