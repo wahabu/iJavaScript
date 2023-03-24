@@ -1,11 +1,11 @@
 on: push
 name: GitHub-Profile-3D-Contrib
-permissions:
-  contents: read
-on:
   schedule: # 03:00 JST == 18:00 UTC
     - cron: '0 18 * * *'
   workflow_dispatch:
+permissions:
+  contents: read
+
 jobs:
   build-job:
     name: Build Profile-3D-Contrib
