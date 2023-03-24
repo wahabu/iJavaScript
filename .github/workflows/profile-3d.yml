@@ -11,3 +11,5 @@ jobs:
     name: Build Profile-3D-Contrib
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
