@@ -16,8 +16,8 @@ jobs:
         run: ./bin/make_lgtm.sh
       - name: Commit & Push
         run: |
-          git config user.name wahabu
-          git config user.email ritscg2hibo@gmail.com
+          git config user.name yoshi389111
+          git config user.email yoshi.389111@gmail.com
           git add -A .
           git commit -m "create LGTM list"
           git push
