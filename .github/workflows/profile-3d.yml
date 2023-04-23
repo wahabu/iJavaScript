@@ -14,6 +14,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+        with:
+          token: ${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
