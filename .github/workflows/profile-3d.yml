@@ -14,8 +14,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
-        run: |
+        name: Commit & Push
+      - run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
           git add -A .
