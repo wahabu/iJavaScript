@@ -18,8 +18,6 @@ jobs:
         with:
           python-version: '3.10'
       - run: python ./bin/change-border.py profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-with-border.svg
-      - name: Authenticate with GitHub
-        run: git config --global user.token ${{ secrets.ACTIONS_ACCESS }}
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
@@ -28,4 +26,4 @@ jobs:
           git commit -m "Commit message"
           git push
         env:
-          GIT_AUTHOR_TOKEN: ${{ secrets.ACTIONS_ACCESS }}
+          GIT_AUTHOR_TOKEN: ${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}
