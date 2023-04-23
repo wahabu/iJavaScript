@@ -3,13 +3,13 @@ on:
   schedule: # 03:00 JST == 18:00 UTC
     - cron: '0 00 * * *'
   workflow_dispatch:
+name: Authenticate with GitHub
+run: git config --global user.token ${{ secrets.ACTIONS_ACCESS }}
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - name: Authenticate with GitHub
-        run: git config --global user.token ${{ secrets.ACTIONS_ACCESS }}
       - uses: actions/checkout@v3
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
