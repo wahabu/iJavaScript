@@ -28,4 +28,4 @@ jobs:
           git commit -m "Commit message"
           git push --set-upstream origin branch-name
         env:
-          GIT_AUTHOR_TOKEN: ${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}
+          GIT_AUTHOR_TOKEN: ${{ secrets.ACTIONS_ACCESS }}
