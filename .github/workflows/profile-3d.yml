@@ -17,12 +17,15 @@ jobs:
         with:
           python-version: '3.10'
       - run: python ./bin/change-border.py profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-with-border.svg
+      - name: Authenticate with GitHub
+        run: git config --global user.token ${{ secrets.ACTIONS_ACCESS }}
+
       - name: Commit & Push
         run: |
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-          git add -A .
-          git commit -m "generated"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Commit message"
+          git push --set-upstream origin branch-name
         env:
-          GIT_AUTHOR_TOKEN: ${{ secrets.ACTIONS_ACCESS }}
+          GIT_AUTHOR_TOKEN: ${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}
