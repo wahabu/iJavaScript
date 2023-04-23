@@ -20,8 +20,8 @@ jobs:
       - run: python ./bin/change-border.py profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-with-border.svg
       - name: Commit & Push
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config --global user.name wahabu
+          git config --global user.email ritscg2hibo@gmail.com
           git add -A .
           git commit -m "generated"
           git push
