@@ -16,6 +16,6 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
         name: Commit & Push
       - run: |
-          dotnet publish \
-          --configuration Release \
-          --output out
+          git add -A .
+          git commit -m "generated"
+          git push
