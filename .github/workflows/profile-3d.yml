@@ -26,6 +26,6 @@ jobs:
           git config --global user.email github-actions@github.com
           git add .
           git commit -m "Commit message"
-          git push --set-upstream origin branch-name
+          git push
         env:
           GIT_AUTHOR_TOKEN: ${{ secrets.ACTIONS_ACCESS }}
