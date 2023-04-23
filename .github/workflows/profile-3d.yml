@@ -25,5 +25,3 @@ jobs:
           git add -A .
           git commit -m "generated"
           git push
-        with:
-          token: ${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}
