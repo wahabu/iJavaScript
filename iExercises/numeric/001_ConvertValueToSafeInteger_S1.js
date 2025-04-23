@@ -1,0 +1,1 @@
+// Write a JavaScript program to convert a value to a safe integer.
