@@ -1,0 +1,1 @@
+// Write a JavaScript program to create a specified currency format from a given number.
