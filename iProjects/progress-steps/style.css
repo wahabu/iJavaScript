@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli   &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
 :root {
   --line-border-fill: #3498db;
@@ -11,7 +11,7 @@
 
 body {
   background-color: #f4f7fc;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,7 @@ body {
   height: 4px;
   width: 0%;
   z-index: -1;
-  transition: 04.s ease;
+  transition: width 0.4s ease;
 }
 
 .circle {
@@ -68,7 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 3px solid var(--line-border-empty);
-  transition: 0.4s ease;
+  transition: width 0.4s ease;
 }
 
 .circle.active {
