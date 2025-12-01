@@ -72,13 +72,17 @@ Rather than focusing on originality, this project focuses on **deliberate practi
 
 ## 🗂️ Folder Structure
 
-progress-steps/
-│── index.html
-│── style.css
-│── script.js
-└── README.md
+<!-- TREEVIEW START -->
 
----
+```bash
+  progress-steps
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
+```
+
+<!-- TREEVIEW END -->
 
 ## ✔ Final Note
 
