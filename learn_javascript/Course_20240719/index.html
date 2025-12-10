@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      /*
+        Code one now working because came before tag Head one
+        But the code two is also the same but programmar wrote the script with onload, this way will be now problem, beacuse after the load page then make effective on the tag.
+        the Code three was writting after the tag the buttom of html code, so this is the best correct writting the code in html
+      */
+      // Code One
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>

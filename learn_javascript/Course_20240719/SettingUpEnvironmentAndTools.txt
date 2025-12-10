@@ -1,0 +1,22 @@
+# 2024/07/23
+# Setting Up Environment And Tools
+	- First of the all
+		* Check the last update of the vscode program
+		* From Help > Check for Updates
+		* If you see the result "There are currently no updates availabele."
+		* You are working in the last updtaes.
+		
+	- Next go to Extensions (Ctrl+ Shift + X)
+		- Bracket Pair Colorizer
+		- EditorConfig for VS Code
+		- EsLint
+		- indent-rainbow
+		- Live Server
+		- Material Icon Theme
+		- Path Intellisense
+		- Prettier - Code formatter
+		- Anohter Extensions we don't need more at this time
+		
+	- Next create new folder and then:
+		- Create new file [ index.html ]
+			・ when you over the tag code of html will be show you [ MDN Reference ] to know more about it
